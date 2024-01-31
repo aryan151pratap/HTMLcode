@@ -1,0 +1,109 @@
+ Question no. 3
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        div#pen{
+            width: 250px;
+            height: 400px;
+            background-color:lightblue;
+            border: 10px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            background-image: url("beast.jpg");
+            background-size:cover;
+        }
+        h4{
+            text-align: center;
+            text-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red, 0 0 200px red;
+        }
+        div{
+            text-align: center;
+        }
+       textarea{
+            background-color:black;
+            color:lightgreen;
+            text-align: right;
+            width: 90%;
+            font-size: 30px;
+            height:30px;
+        }
+        #p{
+            background-color:black;
+            color:white;
+        }
+        #e{
+            background-color: rgba(224, 141, 26, 0.861);
+        }
+        b{
+            color:red;
+        }
+        #c{
+            background-color:rgb(232, 88, 88 ,0.8);
+        }
+        button{
+            box-shadow: 4px 4px 5px black;
+            cursor: pointer;
+            width:50px;
+            height:50px;
+            margin: 3px;
+            border-width:5px;
+            background-color:rgb(232, 88, 88, 0);
+            color:white;
+        }
+        button:hover{
+
+            box-shadow: 0 0 5px blueviolet, 0 0 25px blueviolet, 0 0 50px blueviolet, 0 0 100px blueviolet, 0 0 200px blueviolet;
+            background-image: url(matrix.gif);                  
+            background-size: cover;
+        }
+        
+    
+    </style>
+    
+</head>
+<body bgcolor="white">
+    <div id="pen">
+        <marquee id="mar" width="50%" scrollamount="4ms" direction="right"><h4><b>Calculator</b></h4></marquee><br>
+            <div><textarea id="input" type="text" placeholder="0"></textarea>
+            <!-- <button onclick="del()" id="dl">Del</button> -->
+        </div>
+        
+         <div>
+            <button onclick="b1()" class="button" id="c">C</button>
+            <button onclick="b2()" class="button" id="br">()</button>
+            <button onclick="b3()" class="button" id="pr">%</button>
+            <button onclick="b4()" class="button" id="sl">/</button>
+        </div>
+        <div>
+        <button onclick="b5()" class="button" id="se">7</button>
+        <button onclick="b6()" class="button" id="eg">8</button>
+        <button onclick="b7()" class="button" id="n">9</button>
+        <button onclick="b8()" class="button" id="m">*</button>
+    </div>
+    <div>
+        <button onclick="b9()" class="button" id="fo">4</button>
+        <button onclick="b10()" class="button" id="fi">5</button>
+        <button onclick="b11()" class="button" id="s">6</button>
+        <button onclick="b12()" class="button" id="mi">-</button>
+    </div>
+    <div>
+        <button onclick="b13()" class="button" id="o">1</button>
+        <button onclick="b14()" class="button" id="t">2</button>
+        <button onclick="b15()" class="button" id="th">3</button>
+        <button onclick="b16()" class="button" id="p">+</button>
+    </div>
+    <div>
+        <button onclick="b17()"  class="button" id="d">0.00</button>
+        <button onclick="b18()"  class="button" id="z">0</button>
+        <button onclick="b19()"  class="button" id="do">.</button>
+        <button onclick="b20()"  class="button" id="e">=</button>
+    </div>
+    </div>
+
+<script src="cal.js"></script>
+</body>
+</html>
